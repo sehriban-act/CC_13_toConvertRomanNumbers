@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Convert to Roman Number</title>
 </head>
 
 
 
 <body>
-    <div class="container-fluid ">
-        <input id="input" type="text">
-        <button id="btn">convert</button>
-        <p id="output" class=" col-lg-3 col-md-4 col   border border-success rounded text-center text-danger"></p>
+    <div class="container-fluid d-flex mt-2 ">
+        <div
+            class=" col-lg-4 col-md-4 col-sm-12 border bg-dark d-flex flex-column align-content-center mt-4  align-content-around">
+            <p class=" bg-danger text-white text-center">Roman Numeral Converter </p>
+            <input class=" bg-light text-center" id="input" type="text">
+            <button class="btn btn-info mt-2" id="btn">convert</button>
+            <p id="output" class=" mt-2 border bg-warning rounded text-center ">ROMAN
+                NUMBER</p>
+            <button class="btn btn-info pt-2" id="clear">clear</button>
+
+        </div>
+
     </div>
     <script src="app.js"></script>
 

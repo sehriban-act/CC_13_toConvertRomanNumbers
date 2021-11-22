@@ -3,9 +3,26 @@
 // ---reverse array---
 const convertBtn = document.getElementById('btn')
 const outPut = document.getElementById('output')
-const num = document.getElementById('input').value;
+const number = document.getElementById('input');
+const clearBtn = document.getElementById("clear");
 
 function convertNumRoman() {
+
+    let num = number.value;
+    // ----valid number---
+
+    if (num >= 4000) {
+
+        alert("The number you entered should be smaller than 4000 ");
+
+    }
+    if (num === "") {
+        alert("Please enter a valid number!");
+
+    }
+
+
+
     // -- - splitNumber pairs with arabRomanObj---
     let pairsNumbers = {
 
@@ -138,4 +155,11 @@ function convertNumRoman() {
     outPut.innerText = romansArr.join('');
 }
 
-convertBtn.addEventListener("click", convertNumRoman)
+function clearNumbers() {
+    number.value = " ";
+    outPut.innerText = "";
+}
+
+convertBtn.addEventListener("click", convertNumRoman);
+clearBtn.addEventListener("click", clearNumbers);
+console.log(clearBtn);
